@@ -15,7 +15,7 @@ export const Navbar = () => {
             <div className="mobile">
                 <div className="header">
                     <div className="logo">Logo</div>
-                    <div className="more"><button onClick={handleClick}>More</button></div>
+                    <div className="more"><button onClick={handleClick}><i className="fa-solid fa-bars"></i></button></div>
                 </div>
                 {
                     toggleMenu && (

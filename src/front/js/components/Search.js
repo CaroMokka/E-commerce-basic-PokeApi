@@ -7,7 +7,7 @@ export const Search = () => {
             <input type="text"></input>
             <div className="actions">
                 <button>
-                    <span className="lupa-icon">Lupa</span>
+                    <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>

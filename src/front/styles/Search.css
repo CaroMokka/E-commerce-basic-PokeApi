@@ -6,11 +6,50 @@
     flex-direction: row;
     align-items: center;
     padding: 5px 10px;
-    margin: 100px auto;
+    margin: 15px auto;
 
     transition: all 0.3s ease-in-out;
 }
 .search-bar:focus-within {
     border: solid 1px #aaa;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.search-bar input[type='text']{
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 18px;
+}
+.search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+    margin-right: 10px;
+
+    transition: color 0.3s ease-in-out;
+
+}
+.search-bar .actions button:hover {
+    color: #2979e2;
+}
+
+/* mediaquery */
+
+@media screen and ( max-width: 868px ){
+    
+    .search-bar{
+        width: 550px;
+    }
+}
+
+@media screen and ( max-width: 600px){
+
+    .search-bar{
+        width: 350px;
+    }
+
 }
