@@ -5,8 +5,11 @@ import '../../styles/Home.css';
 import { Navbar } from '../components/Navbar.js';
 import { Search } from '../components/Search.js';
 import { Slider } from '../components/Slider.js';
+import { News } from '../components/News.js';
 import { Lastests } from '../components/Lastests.js';
-import { Card }   from '../components/Card.js';
+import { Card } from '../components/Card.js';
+import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer.js'; 
 
 
 export const Home = () => {
@@ -21,11 +24,20 @@ export const Home = () => {
             <div className="home-slider">
                 <Slider />
             </div>
+            <div className="home-news">
+                <News />
+            </div>
             <div className="home-sponsors">
                 <Card />
             </div>
             <div className="home-lastests">
                 <Lastests />
+            </div>
+            <div className="home-contact">
+                <Contact />
+            </div>
+            <div className="home-footer">
+                <Footer />
             </div>
         </div>
     );

@@ -12,6 +12,7 @@ export const Lastests = () => {
                 <Card />
                 <Card />
                 <Card />
+                <Card />
             </div>
         </div>
     )

@@ -16,4 +16,5 @@
     width: 90%;
     background-color: olivedrab;
     display: flex;
+    justify-content: center;
 }

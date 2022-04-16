@@ -22,11 +22,30 @@
     background-repeat: no-repeat;
     background-color: magenta;
 }
+.home-container .home-news{
+    width: 90%;
+    background-color: purple;
+    margin: 30px 0;
+}
 .home-container .home-sponsors{
     width: 90%;
     background-color: maroon;
+    margin: 30px 0;
 }
 .home-container .home-lastests{
     width: 90%;
     background-color: midnightblue;
+    margin: 30px 0;
+}
+.home-container .home-contact{
+    width: 90%;
+    height: auto;
+    background-color: orangered;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.home-container .home-footer{
+    width: 100%;
 }

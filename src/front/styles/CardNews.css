@@ -1,0 +1,25 @@
+.cardnews-container{
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;  
+}
+.cardnews-body{
+    width: 100%;
+    background-color: seashell;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardnews-body .cardnews-img{
+    width: 100%;
+    height: auto;
+    background-color: steelblue;
+}
+.cardnews-body .cardnews-title{
+    width: 100%;
+    background-color: teal;
+}
+.cardnews-body .cardnews-text{
+    width: 100%;
+    background-color: gray;
+}
