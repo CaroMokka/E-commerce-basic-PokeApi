@@ -1,8 +1,32 @@
 .news-container{
     width: 100%;
-    background-color: orchid;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.news-container h1{
+    color: white;
+    font-size: 75px;
+    margin: 20px 0;
+}
+.news-body{
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    
+}
+
+/* MediaQuery */
+
+@media screen and ( max-width: 800px ) {
+
+    .news-body{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }

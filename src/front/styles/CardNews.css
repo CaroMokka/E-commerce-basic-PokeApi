@@ -1,25 +1,44 @@
 .cardnews-container{
-    width: 200px;
+    width: 80%;
     height: 200px;
-    background-color: seagreen;  
+    background-color: seagreen; 
+    display: flex; 
+    justify-content: center;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
 }
-.cardnews-body{
+.cardnews-body-left{
+    min-width: 50%;
+    background-color: springgreen;
+}
+.cardnews-body-left .cardnews-img{
     width: 100%;
-    background-color: seashell;
+    height: 100%;
+    background-image: url('../assets/img/arceus.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: sandybrown;
+}
+.cardnews-body-right{
+    min-width: 50%;
+    background-color: yellow;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.cardnews-body .cardnews-img{
-    width: 100%;
-    height: auto;
-    background-color: steelblue;
+.cardnews-body-right .cardnews-title{
+    width: 75%;
+    background-color: tomato;
+    margin: 10px 0;
 }
-.cardnews-body .cardnews-title{
-    width: 100%;
+.cardnews-body-right .cardnews-text{
+    max-width: 75%;
     background-color: teal;
+    margin: 10px 0;
 }
-.cardnews-body .cardnews-text{
-    width: 100%;
-    background-color: gray;
-}
+

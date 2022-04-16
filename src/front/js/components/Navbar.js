@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 //styles
 import '../../styles/Navbar.css';
+
 //components
 import { Bag } from '../components/Bag.js';
 
@@ -16,13 +17,13 @@ export const Navbar = () => {
         <nav>
             <div className="mobile">
                 <div className="header">
-                    <div className="logo">Logo</div>
+                    <a  href="..." className="logo" />
                     <div className="more"><button onClick={handleClick}><i className="fa-solid fa-bars"></i></button></div>
                 </div>
                 {
                     toggleMenu && (
                         <div className="links">
-                            <a href="...">Services</a>
+                            <a href="...">Champions Pokemon</a>
                             <a href="...">Sign up</a>
                             <a href="...">Login</a>
                         </div>
@@ -30,9 +31,9 @@ export const Navbar = () => {
                 }
             </div>
             <div className="desktop">
-                <div className="logo">Logo</div>
+                <a href="..." className="logo" />
                 <div className="primary">
-                    <a href="...">Services</a>
+                    <a href="...">Champions Pokemon</a>
                 </div>
                 <div className="secondary full">
                     <a href="...">Sign up</a>
