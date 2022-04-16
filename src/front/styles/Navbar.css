@@ -25,6 +25,7 @@ nav .logo{
 }
 nav a {
     color: white;
+    font-size: 18px;
     text-decoration: none;
     display: block;
     padding: 20px 25px;

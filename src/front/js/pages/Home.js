@@ -3,6 +3,8 @@ import React from 'react';
 import { Navbar } from '../components/Navbar.js';
 import { Search } from '../components/Search.js';
 import { Slider } from '../components/Slider.js';
+import { Card }   from '../components/Card.js';
+
 
 export const Home = () => {
     return (
@@ -10,7 +12,7 @@ export const Home = () => {
             <Navbar />
             <Search />
             <Slider />
-
+            <Card />
         </div>
     );
 };
