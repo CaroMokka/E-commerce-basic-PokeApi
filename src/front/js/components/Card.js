@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 //styles
 import '../../styles/Card.css';
 
 export const Card = () => {
+
+
+
+
+
+
+
+
+
     return (
         <div className="card-container">
             <div className="card-body">
@@ -10,7 +19,7 @@ export const Card = () => {
                     <img src="..." alt="product"/>
                 </div>
                 <div className="card-title">
-                    <span>Title</span>
+                    <span>name</span>
                 </div>
                 <div className="card-price">
                     <span>$ 2.990</span>

@@ -20,7 +20,7 @@ const injectContext = PassedComponent => {
                 })
             })
         );
-        useEffect(()=>{
+        useEffect( () => {
         //Edita esto ....
         /* Esta función es el equivalente a "window.onLoad", solo se ejecuta una vez durante toda la vida útil de la aplicación
         debe hacer sus solicitudes de ajax o buscar solicitudes de API aquí. No use setState() para guardar datos en el
@@ -29,13 +29,14 @@ const injectContext = PassedComponent => {
         state.actions.getMessage();
         
         */
+
         },[]);
         //El valor inicial del contexto ya no es nulo, sino el estado actual de este componente.
         //El Contexto ahora tendrá disponibles las funciones getStore, getActions y setStore, porque fueron declaradas sobre el estado de este componente.
 
         return (
             <Context.Provider value={state}>
-                <PassedComponent { ...props } />
+                <PassedComponent {...props} />
             </Context.Provider>
         );
     };

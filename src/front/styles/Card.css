@@ -29,6 +29,7 @@
 .card-body .card-title{
     width: 80%;
     /* background-color: turquoise; */
+    font-weight: bold;
     font-size: 25px;
     display: block;
     margin: 10px 0;

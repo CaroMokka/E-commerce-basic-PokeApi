@@ -1,7 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
+
     return {
-        store: {},
-        actions: {}
+
+        store: {
+            pokemones: []
+        },
+        actions: {
+            getPokemones: async () => {}
+            
+        }
 
     }
 }
