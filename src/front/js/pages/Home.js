@@ -11,7 +11,9 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer.js'; 
 
 
-export const Home = () => {
+export const Home = ({ handleAddPokemon }) => {
+
+
     return (
         <div className="home-container">
             <div className="home-header">
@@ -27,7 +29,7 @@ export const Home = () => {
                 <News />
             </div>
             <div className="home-pokemonshop">
-                <PokemonShop />
+                <PokemonShop handleAddPokemon={handleAddPokemon}/>
             </div>
             <div className="home-contact">
                 <Contact />

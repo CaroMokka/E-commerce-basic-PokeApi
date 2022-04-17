@@ -4,11 +4,10 @@ import '../../styles/PokemonShop.css';
 //comaponents
 import { Card } from './Card.js';
 
-export const PokemonShop = () => {
-    const [allPokemons, setAllPokemons] = useState([])
-    const [loading, setLoading] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
-    const [ bag, setBag ] = useState([])
-    console.log(bag)
+export const PokemonShop = ({ handleAddPokemon }) => {
+    const [ allPokemons, setAllPokemons ] = useState([])
+    const [ loading, setLoading ] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+
     
 
     const getAllPokemons = async () => {
@@ -37,13 +36,6 @@ export const PokemonShop = () => {
     }, [])
 
 
-    const addPokemon = (pokemon) => {
-            setBag(currentList => [...currentList, pokemon])
-    }
-
-
-
-
     return (
         <div className="pokemonshop-container">
             <h1 className="pokemonshop-title">POKEMON'S SHOP</h1>
@@ -58,7 +50,7 @@ export const PokemonShop = () => {
                                 image={pokemon.sprites.other.dream_world.front_default}
                                 type={pokemon.types[0].type.name}
                                 experience={pokemon.base_experience}
-                                btnAdd={ () => { addPokemon( pokemon.name ) }}
+                                btnAdd={ () => { handleAddPokemon( pokemon.name ) }}
                                 />
                         )
                     })
