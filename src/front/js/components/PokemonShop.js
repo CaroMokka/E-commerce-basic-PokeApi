@@ -7,6 +7,9 @@ import { Card } from './Card.js';
 export const PokemonShop = () => {
     const [allPokemons, setAllPokemons] = useState([])
     const [loading, setLoading] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+    const [ bag, setBag ] = useState([])
+    console.log(bag)
+    
 
     const getAllPokemons = async () => {
         const res = await fetch(loading)
@@ -34,6 +37,11 @@ export const PokemonShop = () => {
     }, [])
 
 
+    const addPokemon = (pokemon) => {
+            setBag(currentList => [...currentList, pokemon])
+    }
+
+
 
 
     return (
@@ -49,7 +57,9 @@ export const PokemonShop = () => {
                                 name={pokemon.name}
                                 image={pokemon.sprites.other.dream_world.front_default}
                                 type={pokemon.types[0].type.name}
-                                experience={pokemon.base_experience} />
+                                experience={pokemon.base_experience}
+                                btnAdd={ () => { addPokemon( pokemon.name ) }}
+                                />
                         )
                     })
                 }

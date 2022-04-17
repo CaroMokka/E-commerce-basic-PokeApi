@@ -30,7 +30,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     /* background-color: purple; */
-
 }
 .home-container .home-pokemonshop{
     width: 90%;
@@ -38,7 +37,6 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .home-container .home-contact{
     width: 90%;
@@ -47,7 +45,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-
 }
 .home-container .home-footer{
     width: 100%;
@@ -67,7 +64,6 @@
         width: 100%;
         background-image: none;
         background-color: teal;
-       
     }
     .home-container .home-contact{
         width: 100%;
