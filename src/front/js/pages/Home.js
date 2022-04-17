@@ -3,7 +3,6 @@ import React from 'react';
 import '../../styles/Home.css';
 //Components
 import { Navbar } from '../components/Navbar.js';
-import { Search } from '../components/Search.js';
 import { Slider } from '../components/Slider.js';
 import { News } from '../components/News.js';
 import { PokemonShop } from '../components/PokemonShop.js';
@@ -11,16 +10,13 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer.js'; 
 
 
-export const Home = ({ handleAddPokemon }) => {
+export const Home = ({ handleAddPokemon, bagPokemons }) => {
 
 
     return (
         <div className="home-container">
             <div className="home-header">
-                <Navbar />
-            </div>
-            <div className="home-search">
-                <Search />
+                <Navbar bagPokemons={bagPokemons} />
             </div>
             <div className="home-slider">
                 <Slider />

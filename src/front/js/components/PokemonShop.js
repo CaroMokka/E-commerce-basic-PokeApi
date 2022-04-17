@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/PokemonShop.css';
 //comaponents
 import { Card } from './Card.js';
+import { Search } from './Search.js';
 
 export const PokemonShop = ({ handleAddPokemon }) => {
     const [ allPokemons, setAllPokemons ] = useState([])
@@ -39,6 +40,7 @@ export const PokemonShop = ({ handleAddPokemon }) => {
     return (
         <div className="pokemonshop-container">
             <h1 className="pokemonshop-title">POKEMON'S SHOP</h1>
+            <Search/>
             <div className="pokemonshop-body">
                 {
                     allPokemons.map((pokemon, index) => {
@@ -50,7 +52,7 @@ export const PokemonShop = ({ handleAddPokemon }) => {
                                 image={pokemon.sprites.other.dream_world.front_default}
                                 type={pokemon.types[0].type.name}
                                 experience={pokemon.base_experience}
-                                btnAdd={ () => { handleAddPokemon( pokemon.name ) }}
+                                btnAdd={ () => { handleAddPokemon( pokemon ) }}
                                 />
                         )
                     })

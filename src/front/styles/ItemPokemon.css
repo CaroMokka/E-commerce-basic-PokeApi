@@ -1,0 +1,32 @@
+.itempokemon-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+.itempokemon-img{
+    width: 250px;
+    height: 150px;
+}
+.itempokemon-title{
+    width: 70%;
+    font-size: 35px;
+    text-align: center;
+    margin: auto 0;
+
+}
+.itempokemon-price{
+    width: 30%;
+    color: tomato;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto 0;
+}
+.itempokemon-remove{
+    border: none;
+    color: black;
+    font-size: 25px;
+    margin: 10px 10px 0 0;
+}

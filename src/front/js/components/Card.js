@@ -16,7 +16,7 @@ export const Card = ({ id, name, image, type, experience, btnAdd }) => {
                 <div className="card-type"><span>Type: {type}</span></div>
                 <div className="card-experience"><span>Exp: {experience}</span></div>
                 <div className="card-price">
-                    <span>$ 2.990</span>
+                    <span>$USD {experience}0</span>
                 </div>
             </div>
             <div className="card-buttons">

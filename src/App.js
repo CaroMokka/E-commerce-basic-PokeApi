@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import injectContext from './front/js/store/appContext.js';
-//Components
-//Pages
-
-//styles
+//Styles
 import './App.css';
+//Pages
 import { Home } from './front/js/pages/Home.js';
 import { ShoppingBag } from './front/js/pages/ShoppingBag.js';
+
+
 
 const App = () => {
   //State to 'ShoppingBag' and 'Navbar' > 'Bag'
@@ -24,8 +23,8 @@ const App = () => {
     <BrowserRouter>
 
       <Routes>
-        <Route path='/' exact element={<Home handleAddPokemon={handleAddPokemon} />} />
-        <Route path='/bag' exact element={<ShoppingBag />} />
+        <Route path='/' exact element={<Home bagPokemons={bagPokemons} handleAddPokemon={handleAddPokemon} />} />
+        <Route path='/bag' exact element={<ShoppingBag bagPokemons={bagPokemons} />} />
       </Routes>
 
     </BrowserRouter>
@@ -34,4 +33,4 @@ const App = () => {
   );
 }
 
-export default injectContext(App);
+export default App;

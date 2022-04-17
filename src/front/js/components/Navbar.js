@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 //styles
 import '../../styles/Navbar.css';
-
 //components
 import { Bag } from '../components/Bag.js';
 
-export const Navbar = () => {
+
+
+export const Navbar = ({ bagPokemons }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
 
@@ -38,7 +39,7 @@ export const Navbar = () => {
                 <div className="secondary full">
                     <a href="...">Sign up</a>
                     <a href="...">Login</a>
-                    <Bag />
+                    <Bag bagPokemons={bagPokemons}/>
                 </div>
                 <div className="secondary mini">
                     <a href="..." className="more">More</a>

@@ -40,7 +40,8 @@
 }
 .card-body .card-price{
     width: 80%;
-    /* background-color: greenyellow; */
+    color: tomato;
+    font-weight: bolder;
     font-size: 25px;
     display: block;
     margin: 10px 0;
