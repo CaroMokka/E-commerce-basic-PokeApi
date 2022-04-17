@@ -19,12 +19,16 @@
     align-items: center;
 }
 .card-body .card-img{
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: steelblue;
     border-radius: 5px;
     display: block;
     margin: 10px 0;
+}
+.card-body .card-img img{
+    width: 200px;
+    height: 200px;
 }
 .card-body .card-title{
     width: 80%;

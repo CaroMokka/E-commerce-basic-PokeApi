@@ -6,7 +6,7 @@ import { Navbar } from '../components/Navbar.js';
 import { Search } from '../components/Search.js';
 import { Slider } from '../components/Slider.js';
 import { News } from '../components/News.js';
-import { Lastests } from '../components/Lastests.js';
+import { PokemonShop } from '../components/PokemonShop.js';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer.js'; 
 
@@ -26,8 +26,8 @@ export const Home = () => {
             <div className="home-news">
                 <News />
             </div>
-            <div className="home-lastests">
-                <Lastests />
+            <div className="home-pokemonshop">
+                <PokemonShop />
             </div>
             <div className="home-contact">
                 <Contact />

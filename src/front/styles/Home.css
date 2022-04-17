@@ -32,7 +32,7 @@
     /* background-color: purple; */
 
 }
-.home-container .home-lastests{
+.home-container .home-pokemonshop{
     width: 90%;
     background-image: url('../assets/img/snorlax.png');
     background-position: center center;
@@ -63,7 +63,7 @@
     .home-container .home-news{
         width: 100%;
     }
-    .home-container .home-lastests{
+    .home-container .home-pokemonshop{
         width: 100%;
         background-image: none;
         background-color: teal;

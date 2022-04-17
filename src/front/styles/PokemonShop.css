@@ -1,4 +1,4 @@
-.lastests-container{
+.pokemonshop-container{
     width: 100%;
     height: auto;
     display: flex;
@@ -6,12 +6,12 @@
     align-items: center;
 
 }
-.lastests-container .lastests-title{
+.pokemonshop-container .pokemonshop-title{
     font-size: 75px;
     color: #ecc73a;
     margin: 35px 0 15px 0;
 }
-.lastests-container .lastests-body{
+.pokemonshop-container .pokemonshop-body{
     width: 90%;
     /* background-color: olivedrab; */
     display: flex;
@@ -19,17 +19,26 @@
     justify-content: center;
     margin: 15px 0;
 }
+.load-more{
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
 
 
 /* MediaQuery */
 @media screen and ( max-width: 800px ){
 
-    .lastests-container .lastests-title{
+    .pokemonshop-container .pokemonshop-title{
         text-align: center;
         font-size: 45px;
         color: #ecc73a;
     }
-    .lastests-container .lastests-body{
+    .pokemonshop-container .pokemonshop-body{
         display: flex;
         flex-wrap: wrap;
         margin: 15px 0;
