@@ -8,8 +8,20 @@
 .shoppingbag-header{
     width: 60%;
     background-color: yellow;
-    text-align: center;
     padding: 25px;
+    display: flex;
+    
+}
+.shoppingbag-header button{
+    margin-right: 200px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.shoppingbag-header button:hover{
+    background-color: darkorange;
 }
 .shoppingbag-body{
     width: 80%;

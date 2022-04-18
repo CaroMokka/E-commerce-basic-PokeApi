@@ -13,10 +13,31 @@ const App = () => {
   const [ bagPokemons, setBagPokemons ] = useState([])
   console.log(bagPokemons)
   
+  //handleAddPokemons function -------------------------------------------->
   const handleAddPokemon = (pokemon) => {
-    setBagPokemons((currentList) => [ ...currentList, pokemon ])
+    const pokemonExist = bagPokemons.find( item => item.id === pokemon.id);
+    if(pokemonExist){
+      setBagPokemons(bagPokemons.map( item => item.id === pokemon.id ? {...pokemonExist, quantity: pokemonExist.quantity + 1} : item))
+    } else {
+      setBagPokemons([...bagPokemons, {...pokemon, quantity:1}])
+    }
+    /* setBagPokemons((currentList) => [ ...currentList, pokemon ]) */
   }
 
+
+  //handleRemovePokemon function -------------------------------------------->
+  const handleRemovePokemon = (pokemon) => {
+    const pokemonExist = bagPokemons.find( item => item.id === pokemon.id);
+    if(pokemonExist.quantity === 1){
+      setBagPokemons(bagPokemons.filter( item => item.id !== pokemon.id))
+    } else {
+      setBagPokemons(
+        bagPokemons.map( (item) => item.id === pokemon.id ? {...pokemonExist, quantity: pokemonExist.quantity -1 } : item)
+      )
+    }
+  }
+
+  
   return (
 
 
@@ -24,7 +45,7 @@ const App = () => {
 
       <Routes>
         <Route path='/' exact element={<Home bagPokemons={bagPokemons} handleAddPokemon={handleAddPokemon} />} />
-        <Route path='/bag' exact element={<ShoppingBag bagPokemons={bagPokemons} />} />
+        <Route path='/bag' exact element={<ShoppingBag bagPokemons={bagPokemons} handleAddPokemon={handleAddPokemon} handleRemovePokemon={handleRemovePokemon} />} />
       </Routes>
 
     </BrowserRouter>

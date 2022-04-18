@@ -40,7 +40,7 @@ export const PokemonShop = ({ handleAddPokemon }) => {
     return (
         <div className="pokemonshop-container">
             <h1 className="pokemonshop-title">POKEMON'S SHOP</h1>
-            <Search/>
+            <Search allPokemons={allPokemons} handleAddPokemon={handleAddPokemon}/>
             <div className="pokemonshop-body">
                 {
                     allPokemons.map((pokemon, index) => {
