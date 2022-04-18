@@ -46,7 +46,7 @@
     align-items: center;
 }
 .shoppingbag-empty{
-    font-size: 35px;
+    font-size: 25px;
     margin: 25px 0;
 }
 .clearbag{
@@ -76,6 +76,20 @@
     font-size: 45px;
     text-align: center;
     padding: 20px 0 10px 0;
+}
+.bodyright button{
+    width: 80%;
+    background-color: #6523b6;
+    color: white;
+    font-size: 25px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.bodyright button:hover{
+    background-color: #ecc73a;
 }
 .shoppingbag-total{
     width: 80%;

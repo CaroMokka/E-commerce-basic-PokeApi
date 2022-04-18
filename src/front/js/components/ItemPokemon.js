@@ -14,7 +14,7 @@ export const ItemPokemon = ({ img, name, price, quantity, btnAdd, btnRemove }) =
                 <div className="quantity">{quantity}</div>
                 <button className="add" onClick={btnAdd}> + </button>
             </div>
-            <div className="itempokemon-price">USD {price}0</div>
+            <div className="itempokemon-price">$ {price}0</div>
         </div>
     )
 }

@@ -21,7 +21,7 @@ export const ShoppingBag = ({ bagPokemons, handleAddPokemon, handleRemovePokemon
                     {
                         bagPokemons.length >= 1 && (<button className="clearbag" onClick={handleClearbag}>Clear Bag</button>)
                     }
-                    {bagPokemons.length === 0 && (<div className="shoppingbag-empty">No items are added...</div>)}
+                    {bagPokemons.length === 0 && (<div className="shoppingbag-empty">Your Pokemon Bag is empty</div>)}
                     <div className="shoppingbag-items">
                         {
                             bagPokemons.map((pokemon, index) => {
