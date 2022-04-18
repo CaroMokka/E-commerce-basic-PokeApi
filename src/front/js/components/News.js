@@ -11,12 +11,12 @@ export const News = () => {
             <h1>News</h1>
             <div className="news-body">
                 <CardNews
-                    title="HOla soy un pojemom"
-                    text="lm,asncnsancnanclwsmncls"
+                    title="noticia-pokemon"
+                    text="texto"
                 />
                 <CardNews
-                    title="Soy un noticia de pokemones"
-                    text="mmmmmmnjnj"
+                    title="noticia-pokemon"
+                    text="texto"
                 />
             </div>
         </div>
