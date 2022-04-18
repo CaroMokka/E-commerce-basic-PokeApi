@@ -1,38 +1,46 @@
 .shoppingbag-container{
     width: 100%;
-    background-color: tomato;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .shoppingbag-header{
-    width: 60%;
-    background-color: yellow;
+    width: 100%;
+    background-color: black;
     padding: 25px;
     display: flex;
+    margin-bottom: 25px;
     
+}
+.shoppingbag-header h1{
+    color: white;
 }
 .shoppingbag-header button{
     margin-right: 200px;
     border: none;
-    background-color: darkblue;
+    background-color: #6948da;
     color: white;
+    border-radius: 10px;
     padding: 15px;
     cursor: pointer;
 }
 .shoppingbag-header button:hover{
-    background-color: darkorange;
+    background-color: #ecc73a;
 }
 .shoppingbag-body{
     width: 80%;
-    background-color: teal;
+    height: 100%;
+    /* background-color: teal; */
     display: flex;
     flex-direction: row;
 }
 .bodyleft{
     width: 65%;
     height: 100vh;
-    background-color: violet;
+    background-color: white;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,23 +58,106 @@
     margin: 10px 0;
     border-radius: 10px;
     cursor: pointer;
-
 }
 .bodyleft .shoppingbag-items{
     width: 90%;
-    background-color: darkgoldenrod;
 }
 .bodyright{
     width: 35%;
     height: 100vh;
-    background-color: darkblue;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bodyright h1{
+    font-size: 45px;
+    text-align: center;
+    padding: 20px 0 10px 0;
 }
 .shoppingbag-total{
-    width: 100%;
-    background-color: turquoise;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    /* background-color: turquoise; */
 }
 .shoppingbag-paymentmethods{
     text-align: center;
     font-size: 25px;
-    margin: 25px 0;
+    padding: 15px 0;
+    margin-bottom: 30px;
 }
+.shoppingbag-paymentmethods h1{
+    font-size: 35px;
+}
+.icons-pay{
+    color: black;
+    font-size: 55px;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 10px;
+    
+}
+.shoppingbag-total .total-items{
+    font-size: 35px;
+    margin-left: auto;
+    padding: 10px;
+} 
+.shoppingbag-total .total-price{
+    font-size: 35px;
+    margin-left: auto;
+    padding: 10px;
+
+}
+
+@media screen and ( max-width: 680px ) { 
+
+    .shoppingbag-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shoppingbag-header h1{
+        color: white;
+        font-size: 15px;
+    }
+    .bodyleft{
+        width: 100%;
+        height: auto;
+    }
+    .bodyright{
+        width: 100%;
+        height: auto;
+    }
+    .clearbag{
+        width: 100px;
+    }
+    .bodyright button{
+        width: 80%;
+        background-color: #6523b6;
+        color: white;
+        font-size: 25px;
+        border: solid 1px #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 25px 0;
+        cursor: pointer;
+    }
+    .shoppingbag-header button:hover{
+        color: black;
+    }
+    .bodyright button:hover{
+        background-color: #ecc73a;
+        color: black;
+    }
+    
+    
+}
+

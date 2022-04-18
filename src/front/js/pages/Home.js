@@ -1,6 +1,8 @@
 import React from 'react';
+
 //styles
 import '../../styles/Home.css';
+
 //Components
 import { Navbar } from '../components/Navbar.js';
 import { Slider } from '../components/Slider.js';

@@ -6,10 +6,7 @@ import { ItemPokemon } from '../components/ItemPokemon.js';
 import '../../styles/ShoppingBag.css';
 
 
-export const ShoppingBag = ({ bagPokemons, handleAddPokemon, handleRemovePokemon }) => {
-
-    const totalPrice = bagPokemons.reduce((pokemon) => pokemon.quantity * pokemon.price, 0);
-    console.log(bagPokemons)
+export const ShoppingBag = ({ bagPokemons, handleAddPokemon, handleRemovePokemon, handleClearbag }) => {
 
 
     return (
@@ -21,8 +18,10 @@ export const ShoppingBag = ({ bagPokemons, handleAddPokemon, handleRemovePokemon
             <div className="shoppingbag-body">
                 <div className="bodyleft" >
                     <h1>Pokemon Bag</h1>
-                    <button className="clearbag">Clear Bag</button>
-                    {bagPokemons.length === 0 && (<div className="shoppingbag-empty">No items are added.</div>)}
+                    {
+                        bagPokemons.length >= 1 && (<button className="clearbag" onClick={handleClearbag}>Clear Bag</button>)
+                    }
+                    {bagPokemons.length === 0 && (<div className="shoppingbag-empty">No items are added...</div>)}
                     <div className="shoppingbag-items">
                         {
                             bagPokemons.map((pokemon, index) => {
@@ -44,9 +43,18 @@ export const ShoppingBag = ({ bagPokemons, handleAddPokemon, handleRemovePokemon
                 <div className="bodyright" >
                     <h1>Total Bag</h1>
                     <div className="shoppingbag-total">
-                        <div className="shoppingbag-paymentmethods">Payment Methods</div>
-                        <div className="shoppingbag-total">Total: ${totalPrice}</div>
+                        <div className="shoppingbag-paymentmethods">
+                            <h1>Payment Methods</h1>
+                            <div className="icons-pay">
+                                <i className="fa-brands fa-cc-visa"></i>
+                                <i className="fa-brands fa-cc-paypal"></i>
+                                <i className="fa-solid fa-credit-card"></i>
+                            </div>
+                        </div>
+                        <div className="total-items">Total Items: {bagPokemons.length}</div>
+                        <div className="total-price">Total Price: $0</div>
                     </div>
+                    <button>Buy now</button>
                 </div>
             </div>
         </div>

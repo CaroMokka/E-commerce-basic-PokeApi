@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .pokemonshop-container .pokemonshop-title{
     font-size: 75px;
@@ -28,8 +27,6 @@
     border-radius: 10px;
     margin: 10px 0;
 }
-
-
 /* MediaQuery */
 @media screen and ( max-width: 800px ){
 
@@ -37,6 +34,7 @@
         text-align: center;
         font-size: 45px;
         color: #ecc73a;
+        padding: 0 15px;
     }
     .pokemonshop-container .pokemonshop-body{
         display: flex;

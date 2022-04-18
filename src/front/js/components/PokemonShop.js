@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
+
 //styles
 import '../../styles/PokemonShop.css';
+
 //comaponents
 import { Card } from './Card.js';
 import { Search } from './Search.js';
 
 export const PokemonShop = ({ handleAddPokemon }) => {
     const [ allPokemons, setAllPokemons ] = useState([])
-    const [ loading, setLoading ] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+    const [ loading, setLoading ] = useState('https://pokeapi.co/api/v2/pokemon?limit=30')
 
     
 

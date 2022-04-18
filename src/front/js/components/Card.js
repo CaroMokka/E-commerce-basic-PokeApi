@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 //styles
 import '../../styles/Card.css';
 
@@ -20,7 +21,6 @@ export const Card = ({ id, name, image, type, experience, btnAdd }) => {
                 </div>
             </div>
             <div className="card-buttons">
-                <button>Buy now</button>
                 <button onClick={btnAdd} >Add a Bag</button>
             </div>
         </div>
